@@ -1,5 +1,6 @@
 # Fluentbit
 This repo contains fluentbit config files for cluster logging
+--------
 Configuration Steps.
 --------
 1. kubectl create namespace metrics
