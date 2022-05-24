@@ -9,7 +9,7 @@ Configuration Steps.
 4. kubectl create -f fluent-bit-ds.yaml
 5. kubectl create -f fluent-bit-collector.yaml
 
-Access logs through pods/container
+Access logs through pod/container
 ------
 1. kubectl get pod log-collector-0 -n metrics -o jsonpath=‘{.spec.containers[*].name}'
  (To list down all the container in a log-collector-0 pod)
