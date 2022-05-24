@@ -13,5 +13,5 @@ Access logs through pod/container
 ------
 1. kubectl get pod log-collector-0 -n metrics -o jsonpath=‘{.spec.containers[*].name}'
  (To list down all the container in a log-collector-0 pod)
-2. kubectl exec -i -t log-collector-0 -n metrics --container nginx -- /bin/bash   (log-collector-0 --> log-collector pod)
+2. kubectl exec -i -t log-collector-0 -n metrics --container nginx -- /bin/bash   (To get terminal access of logs using pod/container)
 3. cd /usr/share/nginx/html    (Logs location)
