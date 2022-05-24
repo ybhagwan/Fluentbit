@@ -130,7 +130,8 @@ spec:
     targetPort: viewer
   - port: 2020
     name: fluent-status
-  type: LoadBalancer
+  #type: LoadBalancer
+  type: "ClusterIP"
   selector:
     k8s-apps: log-collector
 ---
